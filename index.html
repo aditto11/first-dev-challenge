@@ -2,79 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Challenge</title>
-    <style>
-        body {
-            font-family: Space Mono;
-            border-radius: 8px;
-            background: #FFF;
-            box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.10);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Challenge</title>
+  <style>
+    body {
+      font-family: Space Mono;
+      background: #FFF;
+    }
 
-        header {
-            color: #333;
-            font-family: Inconsolata;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-        }
+    header {
+      color: #333;
+      font-family: Inconsolata;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 44px;
 
-        main {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 120px;
-        }
-        
-        .banner{
-            
-            padding: 226px 119px 339px 0;
-        }
-        .title {
-            color: #333;
-            font-size: 64px;
-            font-weight: 700;
-            letter-spacing: -2.24px;
-            padding-bottom: 36px;
-            width: 586px;
-        }
+    }
 
-        .description {
-            color: #4F4F4F;
-            font-size: 24px;
-            font-weight: 400;
-            letter-spacing: -0.84px;
-            padding-bottom: 64px;
-            width: 381px;
-        }
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 120px;
+    }
 
-        .btn-primary {
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
+    img {
+      width: 500px;
+      height: 500px;
+      padding: 250px 118px 200px 400px;
+    }
 
-            background: #333;
-            width: 216px;
-            height: 68px;
-            padding: 24px 43px;
-        }
-    </style>
+    .banner {
+
+      padding: 226px 119px 200px 0;
+    }
+
+    .title {
+      color: #333;
+      font-size: 64px;
+      font-weight: 700;
+      letter-spacing: -2.24px;
+      padding-bottom: 36px;
+      width: 586px;
+    }
+
+    .description {
+      color: #4F4F4F;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: -0.84px;
+      padding-bottom: 64px;
+      width: 381px;
+    }
+
+    .btn-primary{
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      background: #333;
+      width: 216px;
+      height: 68px;
+      padding: 24px 43px;
+    }
+    .paragraph{
+        text-align: center;
+        padding-bottom: 24px;
+    }
+    @media screen and (max-width:576px) {
+      header{
+        padding: 10px;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+
+      img {
+        width: 286.83px;
+        height: 220.352px;
+        flex-shrink: 0;
+        padding: 50px;
+      }
+      .banner{
+        padding: 20px;
+      }
+      .title {
+        width: 386px;
+      }
+
+      .description {
+        width: 300px;
+      }
+      .btn-primary{
+        padding: 10px;
+      }
+      .paragraph{
+        padding-top: 50px;
+      }
+    }
+    
+  </style>
 </head>
 
 <body>
-    <header>
-        <h4>404 NOT FOUND</h4>
-    </header>
-    <main class="main">
-        <img src="Scarecrow.png" alt="">
-        <div class="banner">
-            <div class="title">I have bad news for you</div>
-            <p class="description">The page you are looking for might be removed or is temporarily unavailable</p>
-            <button class="btn-primary">Back to homepage</button>
-        </div>
-    </main>
+  <header>
+    <h4>404 NOT FOUND</h4>
+  </header>
+  <main class="main">
+    <img src="Scarecrow.png" alt="">
+    <div class="banner">
+      <div class="title">I have bad news for you</div>
+      <p class="description">The page you are looking for might be removed or is temporarily unavailable</p>
+      <button class="btn-primary">Back to homepage</button>
+    </div>
+    
+  </main>
+  <div class="paragraph">
+    <p class="p">created by username - devChallenges.io</p>
+  </div>
 </body>
 
 </html>
